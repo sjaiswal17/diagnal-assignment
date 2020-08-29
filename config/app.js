@@ -5,7 +5,7 @@ const config = convict({
     name: {
       doc: 'Name of the service',
       format: String,
-      default: 'Your service name'
+      default: 'Diagnal Assignment'
     }
   },
   env: {

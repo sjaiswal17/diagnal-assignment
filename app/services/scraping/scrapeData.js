@@ -1,6 +1,6 @@
 const { default: ServiceBase } = require('../base')
 
-export default class GetAll extends ServiceBase {
+export default class ScrapeData extends ServiceBase {
   async run () {
 
   }
