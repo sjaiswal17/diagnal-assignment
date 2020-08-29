@@ -1,9 +1,12 @@
 import sendResponse from '../helpers/sendResponse'
 import ScrapeData from '../services/scraping/scrapeData'
+import getOgTagsList from '../helpers/getOgTagsList'
 
 export default class ScrapingController {
   static async ScrapeData (req, res) {
-    const scrapeDataResult = await ScrapeData.execute(req.body)
+    const tagList = getOgTagsList()
+    debugger
+    const scrapeDataResult = await ScrapeData.execute({ ...req.body, tagList })
     sendResponse(scrapeDataResult, res)
   }
 }

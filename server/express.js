@@ -43,7 +43,7 @@ function initMiddleware () {
     extended: true
   }))
 
-  app.use(bodyParser.raw({ type: '*/*', limit: '1000mb' }))
+  app.use(bodyParser.json({ type: '*/*', limit: '1000mb' }))
   app.use(methodOverride())
 
   app.use(compression())
