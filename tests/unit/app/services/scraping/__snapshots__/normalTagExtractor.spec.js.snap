@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services: normalTagExtractor: Normal Tag Extractor should add title and description and image if not present 1`] = `
+NormalTagExtractor {
+  "_args": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <title>Main</title>
+        <meta name='description' content='150 words'>
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+    "ogTags": Object {},
+  },
+  "_context": undefined,
+  "_errors": Object {},
+  "_failed": false,
+  "_filteredArgs": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <title>Main</title>
+        <meta name='description' content='150 words'>
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+    "ogTags": Object {},
+  },
+  "_result": Object {
+    "description": "150 words",
+    "image": Array [
+      "test.png",
+    ],
+    "title": "Main",
+  },
+  "_successful": true,
+  "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <title>Main</title>
+        <meta name='description' content='150 words'>
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+  "ogTags": Object {},
+}
+`;
+
+exports[`Services: normalTagExtractor: Normal Tag Extractor should failed if validation failed 1`] = `
+NormalTagExtractor {
+  "_args": undefined,
+  "_context": undefined,
+  "_errors": Object {
+    "NormalTagExtractor": Object {
+      "doc": "Doc can't be blank",
+      "ogTags": "Og tags can't be blank",
+    },
+  },
+  "_failed": true,
+  "_filteredArgs": Object {},
+  "_result": null,
+  "_successful": false,
+}
+`;
+
+exports[`Services: normalTagExtractor: Normal Tag Extractor should return result if validation passed 1`] = `
+NormalTagExtractor {
+  "_args": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+    "ogTags": Object {},
+  },
+  "_context": undefined,
+  "_errors": Object {},
+  "_failed": false,
+  "_filteredArgs": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+    "ogTags": Object {},
+  },
+  "_result": Object {
+    "image": Array [
+      "test.png",
+    ],
+  },
+  "_successful": true,
+  "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+        <img width=\\"360\\" src=\\"test.png\\" alt=\\"test\\">
+        <img width=\\"360\\" alt=\\"test2\\">
+      </body>
+    </html>
+  ",
+  "ogTags": Object {},
+}
+`;

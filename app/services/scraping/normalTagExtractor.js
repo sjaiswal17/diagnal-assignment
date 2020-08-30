@@ -1,5 +1,6 @@
-import ServiceBase from '../base'
 import cheerio from 'cheerio'
+import { identity, pickBy } from 'lodash'
+import ServiceBase from '../base'
 
 const constraints = {
   doc: {
@@ -26,14 +27,14 @@ export default class NormalTagExtractor extends ServiceBase {
       }
 
       if (!tags.description && $('head > meta[name="description"]').attr('content') && $('head > meta[name="description"]').attr('content').length > 0) {
-        tags.ogDescription = $('head > meta[name="description"]').attr('content')
+        tags.description = $('head > meta[name="description"]').attr('content')
       }
 
       if (!tags.image) {
         const images = []
         $('img[src]').map((_, imageElement) => {
-          if (imageElement.attr('src').length > 0) {
-            const sourceUrl = $(imageElement).attr('src')
+          if (imageElement.attribs.src.length > 0) {
+            const sourceUrl = imageElement.attribs.src
             images.push(sourceUrl)
           }
           return false
@@ -42,15 +43,15 @@ export default class NormalTagExtractor extends ServiceBase {
         tags.image = images.length ? images : tags.image
       }
 
-      if (!tags.ogLocale) {
+      if (!tags.locale) {
         if ($('html').attr('lang') && $('html').attr('lang').length > 0) {
-          tags.ogLocale = $('html').attr('lang')
+          tags.locale = $('html').attr('lang')
         } else if ($('head > meta[name="language"]').attr('content') && $('head > meta[name="language"]').attr('content').length > 0) {
-          tags.ogLocale = $('head > meta[name="language"]').attr('content')
+          tags.locale = $('head > meta[name="language"]').attr('content')
         }
       }
 
-      return tags
+      return pickBy(tags, identity)
     } catch (error) {
       this.log(error)
       return {}

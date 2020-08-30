@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helpers: getOgTagsList: Get the list of OG tags it should return an array 1`] = `
+Array [
+  Object {
+    "keyName": "title",
+    "property": "og:title",
+  },
+  Object {
+    "keyName": "type",
+    "property": "og:type",
+  },
+  Object {
+    "keyName": "logo",
+    "property": "og:logo",
+  },
+  Object {
+    "group": true,
+    "keyName": "image",
+    "property": "og:image",
+  },
+  Object {
+    "group": true,
+    "keyName": "image",
+    "property": "og:image:url",
+  },
+  Object {
+    "group": true,
+    "keyName": "image",
+    "property": "og:image:secure_url",
+  },
+  Object {
+    "keyName": "url",
+    "property": "og:url",
+  },
+  Object {
+    "group": true,
+    "keyName": "audio",
+    "property": "og:audio",
+  },
+  Object {
+    "group": true,
+    "keyName": "audio",
+    "property": "og:audio:url",
+  },
+  Object {
+    "group": true,
+    "keyName": "audio",
+    "property": "og:audio:secure_url",
+  },
+  Object {
+    "keyName": "description",
+    "property": "og:description",
+  },
+  Object {
+    "keyName": "determiner",
+    "property": "og:determiner",
+  },
+  Object {
+    "keyName": "locale",
+    "property": "og:locale",
+  },
+  Object {
+    "keyName": "localeAlternate",
+    "property": "og:locale:alternate",
+  },
+  Object {
+    "keyName": "siteName",
+    "property": "og:site_name",
+  },
+  Object {
+    "keyName": "productRetailerItemId",
+    "property": "og:product:retailer_item_id",
+  },
+  Object {
+    "keyName": "productPriceAmount",
+    "property": "og:product:price:amount",
+  },
+  Object {
+    "keyName": "productPriceCurrency",
+    "property": "og:product:price:currency",
+  },
+  Object {
+    "keyName": "productAvailability",
+    "property": "og:product:availability",
+  },
+  Object {
+    "keyName": "productCondition",
+    "property": "og:product:condition",
+  },
+  Object {
+    "keyName": "priceAmount",
+    "property": "og:price:amount",
+  },
+  Object {
+    "keyName": "priceCurrency",
+    "property": "og:price:currency",
+  },
+  Object {
+    "keyName": "availability",
+    "property": "og:availability",
+  },
+  Object {
+    "group": true,
+    "keyName": "video",
+    "property": "og:video",
+  },
+  Object {
+    "group": true,
+    "keyName": "video",
+    "property": "og:video:url",
+  },
+  Object {
+    "group": true,
+    "keyName": "video",
+    "property": "og:video:secure_url",
+  },
+]
+`;

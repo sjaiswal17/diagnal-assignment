@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services: scrapeData.spec: Scrape The Data should cache result if context cache true 1`] = `
+ScrapeData {
+  "_args": Object {
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+    "url": "https:// www.imdb.com/title/tt0117500/",
+  },
+  "_context": undefined,
+  "_errors": Object {
+    "ScrapeData": Object {
+      "url": "Url is not a valid url",
+    },
+  },
+  "_failed": true,
+  "_filteredArgs": Object {
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+    "url": "https:// www.imdb.com/title/tt0117500/",
+  },
+  "_result": null,
+  "_successful": false,
+  "tagList": Array [
+    Object {
+      "keyName": "title",
+      "property": "og:title",
+    },
+    Object {
+      "keyName": "type",
+      "property": "og:type",
+    },
+    Object {
+      "keyName": "logo",
+      "property": "og:logo",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:secure_url",
+    },
+    Object {
+      "keyName": "url",
+      "property": "og:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:secure_url",
+    },
+    Object {
+      "keyName": "description",
+      "property": "og:description",
+    },
+    Object {
+      "keyName": "determiner",
+      "property": "og:determiner",
+    },
+    Object {
+      "keyName": "locale",
+      "property": "og:locale",
+    },
+    Object {
+      "keyName": "localeAlternate",
+      "property": "og:locale:alternate",
+    },
+    Object {
+      "keyName": "siteName",
+      "property": "og:site_name",
+    },
+    Object {
+      "keyName": "productRetailerItemId",
+      "property": "og:product:retailer_item_id",
+    },
+    Object {
+      "keyName": "productPriceAmount",
+      "property": "og:product:price:amount",
+    },
+    Object {
+      "keyName": "productPriceCurrency",
+      "property": "og:product:price:currency",
+    },
+    Object {
+      "keyName": "productAvailability",
+      "property": "og:product:availability",
+    },
+    Object {
+      "keyName": "productCondition",
+      "property": "og:product:condition",
+    },
+    Object {
+      "keyName": "priceAmount",
+      "property": "og:price:amount",
+    },
+    Object {
+      "keyName": "priceCurrency",
+      "property": "og:price:currency",
+    },
+    Object {
+      "keyName": "availability",
+      "property": "og:availability",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:secure_url",
+    },
+  ],
+  "url": "https:// www.imdb.com/title/tt0117500/",
+}
+`;
+
+exports[`Services: scrapeData.spec: Scrape The Data should failed if validation failed 1`] = `
+ScrapeData {
+  "_args": undefined,
+  "_context": undefined,
+  "_errors": Object {
+    "ScrapeData": Object {
+      "tagList": "Tag list can't be blank",
+      "url": "Url can't be blank",
+    },
+  },
+  "_failed": true,
+  "_filteredArgs": Object {},
+  "_result": null,
+  "_successful": false,
+}
+`;

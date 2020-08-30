@@ -1,0 +1,824 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Services: ogTagExtractor.spec: Og Tag Extractor should failed if validation failed 1`] = `
+OgTagExtractor {
+  "_args": undefined,
+  "_context": undefined,
+  "_errors": Object {
+    "OgTagExtractor": Object {
+      "doc": "Doc can't be blank",
+      "tagList": "Tag list can't be blank",
+    },
+  },
+  "_failed": true,
+  "_filteredArgs": Object {},
+  "_result": null,
+  "_successful": false,
+}
+`;
+
+exports[`Services: ogTagExtractor.spec: Og Tag Extractor should return array of images 1`] = `
+OgTagExtractor {
+  "_args": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+        <meta property=\\"og:image\\" content=\\"test1.png\\">
+        <meta property=\\"og:image\\" content=\\"test2.png\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+  },
+  "_context": undefined,
+  "_errors": Object {},
+  "_failed": false,
+  "_filteredArgs": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+        <meta property=\\"og:image\\" content=\\"test1.png\\">
+        <meta property=\\"og:image\\" content=\\"test2.png\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+  },
+  "_result": Object {
+    "description": "test description",
+    "image": Array [
+      "test1.png",
+      "test2.png",
+    ],
+    "title": "test page",
+  },
+  "_successful": true,
+  "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+        <meta property=\\"og:image\\" content=\\"test1.png\\">
+        <meta property=\\"og:image\\" content=\\"test2.png\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+  "tagList": Array [
+    Object {
+      "keyName": "title",
+      "property": "og:title",
+    },
+    Object {
+      "keyName": "type",
+      "property": "og:type",
+    },
+    Object {
+      "keyName": "logo",
+      "property": "og:logo",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:secure_url",
+    },
+    Object {
+      "keyName": "url",
+      "property": "og:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:secure_url",
+    },
+    Object {
+      "keyName": "description",
+      "property": "og:description",
+    },
+    Object {
+      "keyName": "determiner",
+      "property": "og:determiner",
+    },
+    Object {
+      "keyName": "locale",
+      "property": "og:locale",
+    },
+    Object {
+      "keyName": "localeAlternate",
+      "property": "og:locale:alternate",
+    },
+    Object {
+      "keyName": "siteName",
+      "property": "og:site_name",
+    },
+    Object {
+      "keyName": "productRetailerItemId",
+      "property": "og:product:retailer_item_id",
+    },
+    Object {
+      "keyName": "productPriceAmount",
+      "property": "og:product:price:amount",
+    },
+    Object {
+      "keyName": "productPriceCurrency",
+      "property": "og:product:price:currency",
+    },
+    Object {
+      "keyName": "productAvailability",
+      "property": "og:product:availability",
+    },
+    Object {
+      "keyName": "productCondition",
+      "property": "og:product:condition",
+    },
+    Object {
+      "keyName": "priceAmount",
+      "property": "og:price:amount",
+    },
+    Object {
+      "keyName": "priceCurrency",
+      "property": "og:price:currency",
+    },
+    Object {
+      "keyName": "availability",
+      "property": "og:availability",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:secure_url",
+    },
+  ],
+}
+`;
+
+exports[`Services: ogTagExtractor.spec: Og Tag Extractor should return result if validation passed 1`] = `
+OgTagExtractor {
+  "_args": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+  },
+  "_context": undefined,
+  "_errors": Object {},
+  "_failed": false,
+  "_filteredArgs": Object {
+    "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+    "tagList": Array [
+      Object {
+        "keyName": "title",
+        "property": "og:title",
+      },
+      Object {
+        "keyName": "type",
+        "property": "og:type",
+      },
+      Object {
+        "keyName": "logo",
+        "property": "og:logo",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "image",
+        "property": "og:image:secure_url",
+      },
+      Object {
+        "keyName": "url",
+        "property": "og:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "audio",
+        "property": "og:audio:secure_url",
+      },
+      Object {
+        "keyName": "description",
+        "property": "og:description",
+      },
+      Object {
+        "keyName": "determiner",
+        "property": "og:determiner",
+      },
+      Object {
+        "keyName": "locale",
+        "property": "og:locale",
+      },
+      Object {
+        "keyName": "localeAlternate",
+        "property": "og:locale:alternate",
+      },
+      Object {
+        "keyName": "siteName",
+        "property": "og:site_name",
+      },
+      Object {
+        "keyName": "productRetailerItemId",
+        "property": "og:product:retailer_item_id",
+      },
+      Object {
+        "keyName": "productPriceAmount",
+        "property": "og:product:price:amount",
+      },
+      Object {
+        "keyName": "productPriceCurrency",
+        "property": "og:product:price:currency",
+      },
+      Object {
+        "keyName": "productAvailability",
+        "property": "og:product:availability",
+      },
+      Object {
+        "keyName": "productCondition",
+        "property": "og:product:condition",
+      },
+      Object {
+        "keyName": "priceAmount",
+        "property": "og:price:amount",
+      },
+      Object {
+        "keyName": "priceCurrency",
+        "property": "og:price:currency",
+      },
+      Object {
+        "keyName": "availability",
+        "property": "og:availability",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:url",
+      },
+      Object {
+        "group": true,
+        "keyName": "video",
+        "property": "og:video:secure_url",
+      },
+    ],
+  },
+  "_result": Object {
+    "description": "test description",
+    "title": "test page",
+  },
+  "_successful": true,
+  "doc": "
+    <html>
+      <head>
+        <meta charset=\\"utf-8\\">
+        <meta property=\\"og:description\\" content=\\"test description\\">
+        <meta property=\\"og:title\\" content=\\"test page\\">
+      </head>
+      <body>
+        <h1>hello test page</h1>
+      </body>
+    </html>
+  ",
+  "tagList": Array [
+    Object {
+      "keyName": "title",
+      "property": "og:title",
+    },
+    Object {
+      "keyName": "type",
+      "property": "og:type",
+    },
+    Object {
+      "keyName": "logo",
+      "property": "og:logo",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "image",
+      "property": "og:image:secure_url",
+    },
+    Object {
+      "keyName": "url",
+      "property": "og:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "audio",
+      "property": "og:audio:secure_url",
+    },
+    Object {
+      "keyName": "description",
+      "property": "og:description",
+    },
+    Object {
+      "keyName": "determiner",
+      "property": "og:determiner",
+    },
+    Object {
+      "keyName": "locale",
+      "property": "og:locale",
+    },
+    Object {
+      "keyName": "localeAlternate",
+      "property": "og:locale:alternate",
+    },
+    Object {
+      "keyName": "siteName",
+      "property": "og:site_name",
+    },
+    Object {
+      "keyName": "productRetailerItemId",
+      "property": "og:product:retailer_item_id",
+    },
+    Object {
+      "keyName": "productPriceAmount",
+      "property": "og:product:price:amount",
+    },
+    Object {
+      "keyName": "productPriceCurrency",
+      "property": "og:product:price:currency",
+    },
+    Object {
+      "keyName": "productAvailability",
+      "property": "og:product:availability",
+    },
+    Object {
+      "keyName": "productCondition",
+      "property": "og:product:condition",
+    },
+    Object {
+      "keyName": "priceAmount",
+      "property": "og:price:amount",
+    },
+    Object {
+      "keyName": "priceCurrency",
+      "property": "og:price:currency",
+    },
+    Object {
+      "keyName": "availability",
+      "property": "og:availability",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:url",
+    },
+    Object {
+      "group": true,
+      "keyName": "video",
+      "property": "og:video:secure_url",
+    },
+  ],
+}
+`;

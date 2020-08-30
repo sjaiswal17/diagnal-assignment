@@ -1,5 +1,6 @@
-import ServiceBase from '../base'
 import cheerio from 'cheerio'
+import { identity, pickBy } from 'lodash'
+import ServiceBase from '../base'
 import NormalTagExtractor from './normalTagExtractor'
 
 const constraints = {
@@ -47,7 +48,7 @@ export default class OgTagExtractor extends ServiceBase {
         return normalTagExtractorResult.result
       }
 
-      return ogTags
+      return pickBy(ogTags, identity)
     } catch (error) {
       this.log(error)
       return {}
