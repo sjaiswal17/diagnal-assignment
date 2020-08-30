@@ -1,4 +1,6 @@
 import ServiceBase from '../base'
+import axios from 'axios'
+import TagExtractor from './tagExtractor'
 
 const constraints = {
   url: {
@@ -19,6 +21,12 @@ export default class ScrapeData extends ServiceBase {
   }
 
   async run () {
-
+    const response = await axios.get(this.url)
+    const tagExtractorResult = await TagExtractor.execute({ ...this.args, doc: response.data })
+    if (tagExtractorResult.successful) {
+      return tagExtractorResult.result
+    } else {
+      this.addError('tagExtractorResult', 'Web server is returning error')
+    }
   }
 }

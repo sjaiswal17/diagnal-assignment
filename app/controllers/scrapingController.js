@@ -5,7 +5,6 @@ import getOgTagsList from '../helpers/getOgTagsList'
 export default class ScrapingController {
   static async ScrapeData (req, res) {
     const tagList = getOgTagsList()
-    debugger
     const scrapeDataResult = await ScrapeData.execute({ ...req.body, tagList })
     sendResponse(scrapeDataResult, res)
   }
