@@ -9,38 +9,32 @@ export default () => {
     property: 'og:logo',
     keyName: 'logo'
   }, {
+    group: true,
     property: 'og:image',
     keyName: 'image'
   }, {
+    group: true,
     property: 'og:image:url',
-    keyName: 'imageURL'
+    keyName: 'image'
   }, {
+    group: true,
     property: 'og:image:secure_url',
-    keyName: 'imageSecureURL'
-  }, {
-    property: 'og:image:width',
-    keyName: 'imageWidth'
-  }, {
-    property: 'og:image:height',
-    keyName: 'imageHeight'
-  }, {
-    property: 'og:image:type',
-    keyName: 'imageType'
+    keyName: 'image'
   }, {
     property: 'og:url',
     keyName: 'url'
   }, {
+    group: true,
     property: 'og:audio',
     keyName: 'audio'
   }, {
+    group: true,
     property: 'og:audio:url',
-    keyName: 'audioURL'
+    keyName: 'audio'
   }, {
+    group: true,
     property: 'og:audio:secure_url',
-    keyName: 'audioSecureURL'
-  }, {
-    property: 'og:audio:type',
-    keyName: 'audioType'
+    keyName: 'audio'
   }, {
     property: 'og:description',
     keyName: 'description'
@@ -81,25 +75,16 @@ export default () => {
     property: 'og:availability',
     keyName: 'availability'
   }, {
+    group: true,
     property: 'og:video',
     keyName: 'video'
   }, {
+    group: true,
     property: 'og:video:url', // An alternative to 'og:video'
     keyName: 'video'
   }, {
+    group: true,
     property: 'og:video:secure_url',
-    keyName: 'videoSecureURL'
-  }, {
-    property: 'og:video:actor:id',
-    keyName: 'videoActorId'
-  }, {
-    property: 'og:video:width',
-    keyName: 'videoWidth'
-  }, {
-    property: 'og:video:height',
-    keyName: 'videoHeight'
-  }, {
-    property: 'og:video:type',
-    keyName: 'videoType'
+    keyName: 'video'
   }]
 }

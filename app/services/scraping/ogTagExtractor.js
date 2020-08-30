@@ -1,5 +1,6 @@
 import ServiceBase from '../base'
 import cheerio from 'cheerio'
+import NormalTagExtractor from './normalTagExtractor'
 
 const constraints = {
   doc: {
@@ -12,7 +13,7 @@ const constraints = {
   }
 }
 
-export default class TagExtractor extends ServiceBase {
+export default class OgTagExtractor extends ServiceBase {
   get constraints () {
     return constraints
   }
@@ -32,11 +33,19 @@ export default class TagExtractor extends ServiceBase {
         this.tagList.forEach((tag) => {
           if (propertyName.toLowerCase() === tag.property.toLowerCase()) {
             if (!ogTags[tag.keyName]) {
-              ogTags[tag.keyName] = propertyValue
+              ogTags[tag.keyName] = tag.group ? [propertyValue] : propertyValue
+            } else if (Array.isArray(ogTags[tag.keyName])) {
+              ogTags[tag.keyName].push(propertyValue)
             }
           }
         })
       })
+
+      const normalTagExtractorResult = await NormalTagExtractor.execute({ ...this.args, ogTags })
+
+      if (normalTagExtractorResult.successful) {
+        return normalTagExtractorResult.result
+      }
 
       return ogTags
     } catch (error) {

@@ -1,6 +1,6 @@
 import ServiceBase from '../base'
 import axios from 'axios'
-import TagExtractor from './tagExtractor'
+import OgTagExtractor from './ogTagExtractor'
 
 const constraints = {
   url: {
@@ -22,11 +22,11 @@ export default class ScrapeData extends ServiceBase {
 
   async run () {
     const response = await axios.get(this.url)
-    const tagExtractorResult = await TagExtractor.execute({ ...this.args, doc: response.data })
-    if (tagExtractorResult.successful) {
-      return tagExtractorResult.result
+    const ogTagExtractorResult = await OgTagExtractor.execute({ ...this.args, doc: response.data })
+    if (ogTagExtractorResult.successful) {
+      return ogTagExtractorResult.result
     } else {
-      this.addError('tagExtractorResult', 'Web server is returning error')
+      this.mergeErrors(ogTagExtractorResult.errors)
     }
   }
 }
