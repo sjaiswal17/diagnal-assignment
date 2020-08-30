@@ -1,3 +1,4 @@
+require('dotenv').config()
 const convict = require('convict')
 
 const config = convict({
